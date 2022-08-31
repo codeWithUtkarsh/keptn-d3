@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: real-estate-for-all-primary
+spec:
+  ports:
+  - port: 3000
+    targetPort: 3000
+  selector:
+    app: real-estate-for-all-primary
+  type: ClusterIP
+status:
+  loadBalancer: {}
