@@ -1,0 +1,35 @@
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.db_service }}
+spec:
+  selector:
+    app: {{ .Values.db_service }}
+  ports:
+    - port: 27017
+      targetPort: 27017
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.web_service }}
+spec:
+  selector:
+    app: {{ .Values.web_service }}
+  ports:
+    - port: 3000
+      targetPort: 3000
+  type: ClusterIP
+
