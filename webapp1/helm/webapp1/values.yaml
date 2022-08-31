@@ -1,6 +1,5 @@
-
-replicaCount: 1
-image: 1645370/recipe_blog_api:latest
-db_service: mongo
 db_image: mongo:latest
+db_service: mongo
+image: 1645370/webapp:latest
+replicaCount: 1
 web_service: webapp
