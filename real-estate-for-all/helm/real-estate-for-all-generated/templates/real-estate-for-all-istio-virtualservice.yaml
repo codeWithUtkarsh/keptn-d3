@@ -14,6 +14,6 @@ spec:
   - route:
     - destination:
         host: real-estate-for-all-canary.ms2-production.svc.cluster.local
-      weight: 100
     - destination:
         host: real-estate-for-all-primary.ms2-production.svc.cluster.local
+      weight: 100
