@@ -5,6 +5,7 @@ metadata:
   name: real-estate-for-all
 spec:
   host: real-estate-for-all.ms2-dev.svc.cluster.local
+  trafficPolicy: # Apply to all ports
     portLevelSettings:
-      - port:
-          number: 3000
+    - port:
+        number: 3000
