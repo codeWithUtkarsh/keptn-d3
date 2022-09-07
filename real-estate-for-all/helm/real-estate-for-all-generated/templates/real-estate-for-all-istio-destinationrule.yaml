@@ -9,3 +9,5 @@ spec:
     portLevelSettings:
     - port:
         number: 3000
+      loadBalancer:
+        simple: ROUND_ROBIN
