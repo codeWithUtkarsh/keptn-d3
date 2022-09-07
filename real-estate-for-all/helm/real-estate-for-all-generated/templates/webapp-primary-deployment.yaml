@@ -16,7 +16,7 @@ spec:
         app: real-estate-for-all-primary
     spec:
       containers:
-      - image: 1645370/real-estate-for-all:2022-09-01--54-28
+      - image: 1645370/real-estate-for-all:latest
         name: real-estate-for-all
         ports:
         - containerPort: 3000
