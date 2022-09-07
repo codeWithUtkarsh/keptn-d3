@@ -1,5 +1,0 @@
-db_image: mongo:latest
-db_service: mongo
-image: 1645370/webapp:latest
-replicaCount: 1
-web_service: webapp
