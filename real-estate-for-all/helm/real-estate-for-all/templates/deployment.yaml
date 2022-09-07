@@ -16,4 +16,4 @@ spec:
         - name: real-estate-for-all
           image: {{ .Values.image }}
           ports:
-            - containerPort: 80
+            - containerPort: 3000
