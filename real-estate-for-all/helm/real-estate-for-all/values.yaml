@@ -1,3 +1,2 @@
-
-replicaCount: 1
 image: 1645370/real-estate-for-all:latest
+replicaCount: 1
