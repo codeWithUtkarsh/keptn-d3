@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: real-estate-for-all
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - real-estate-for-all.ms2-dev.40.88.208.171.nip.io
+  - real-estate-for-all
+  http:
+  - route:
+    - destination:
+        host: real-estate-for-all.ms2-dev.svc.cluster.local

@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  creationTimestamp: null
+  name: real-estate-for-all
+spec:
+  host: real-estate-for-all.ms2-dev.svc.cluster.local
