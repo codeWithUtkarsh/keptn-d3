@@ -5,3 +5,6 @@ metadata:
   name: real-estate-for-all
 spec:
   host: real-estate-for-all.ms2-dev.svc.cluster.local
+    portLevelSettings:
+      - port:
+          number: 3000
