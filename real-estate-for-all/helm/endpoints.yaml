@@ -1,3 +1,5 @@
 deploymentURIsLocal:
   - "http://real-estate-for-all.ms2-qa:3000"
+deploymentURIsPublic:
+  - "http://real-estate-for-all.ms2-dev.40.88.208.171.nip.io:3000"
   
