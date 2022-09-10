@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: ortelius-www
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - ortelius-www.ms2-production.40.88.208.171.nip.io
+  - ortelius-www
+  http:
+  - route:
+    - destination:
+        host: ortelius-www-canary.ms2-production.svc.cluster.local
+    - destination:
+        host: ortelius-www-primary.ms2-production.svc.cluster.local
+      weight: 100
